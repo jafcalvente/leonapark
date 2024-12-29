@@ -1,0 +1,56 @@
+@import "bootstrap/scss/bootstrap";
+
+.amatic-sc-regular {
+  font-family: "Amatic SC", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.eucalyptus-color {
+  color: #5f9e9c;
+
+  &--darker {
+    color: #378280;
+  }
+}
+
+.golden-amber-color {
+  color: #a97038;
+}
+
+.show-menu-btn {
+  @extend .position-fixed;
+  top: 1rem;
+  left: 1rem;
+  width: 2rem;
+  height: 2rem;
+  z-index: 10;
+  --bs-btn-hover-color: #378280;
+
+  .leona-park-menu-icon {
+    @extend .position-absolute;
+    width: 32px;
+    height: 32px;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+
+    &.fade-out {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+  }
+
+  @keyframes fade-in-out {
+    0% {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1);
+    }
+    100% {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+  }
+}

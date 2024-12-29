@@ -1,0 +1,16 @@
+@import "bootstrap/scss/bootstrap";
+
+:host {
+  @extend .position-sticky;
+  @extend .top-0;
+  @extend .py-3;
+  @extend .d-flex;
+  @extend .justify-content-center;
+  @extend .bg-white;
+  z-index: 8;
+  opacity: 0.9;
+
+  img {
+    max-width: 200px;
+  }
+}

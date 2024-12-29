@@ -1,0 +1,64 @@
+@import "bootstrap/scss/bootstrap";
+
+:host {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+.eucalyptus-color {
+  color: #5f9e9c;
+
+  &--darker {
+    color: #378280;
+  }
+}
+
+.leona-park-map {
+  padding: 1rem;
+  padding-bottom: 0.6rem;
+  background-image: radial-gradient(
+      calc(2 * 1em) at 0 0,
+      transparent 50%,
+      rgba(55, 130, 128, 0.4) 0,
+      rgba(55, 130, 128, 0.4) 99.99%,
+      transparent 0
+    ),
+    radial-gradient(
+      calc(2 * 1em) at 0 100%,
+      transparent 50%,
+      rgba(55, 130, 128, 0.4) 0,
+      rgba(55, 130, 128, 0.4) 99.99%,
+      transparent 0
+    ),
+    radial-gradient(
+      calc(2 * 1em) at 100% 100%,
+      transparent 50%,
+      rgba(55, 130, 128, 0.4) 0,
+      rgba(55, 130, 128, 0.4) 99.99%,
+      transparent 0
+    ),
+    radial-gradient(
+      calc(2 * 1em) at 100% 0,
+      transparent 50%,
+      rgba(55, 130, 128, 0.4) 0,
+      rgba(55, 130, 128, 0.4) 99.99%,
+      transparent 0
+    ),
+    linear-gradient(
+      90deg,
+      transparent 1em,
+      rgba(169, 112, 56, 0.4) 0,
+      rgba(169, 112, 56, 0.4) calc(100% - 1em),
+      transparent calc(100% - 1em)
+    ),
+    linear-gradient(
+      180deg,
+      transparent 1em,
+      rgba(95, 158, 156, 0.4) 0,
+      rgba(95, 158, 156, 0.4) calc(100% - 1em),
+      transparent calc(100% - 1em)
+    );
+}

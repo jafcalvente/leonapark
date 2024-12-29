@@ -1,0 +1,50 @@
+@import "bootstrap/scss/bootstrap";
+
+:host {
+  @extend .position-fixed;
+  @extend .top-0;
+  @extend .start-0;
+  @extend .bottom-0;
+  @extend .pt-3;
+  @extend .d-flex;
+  @extend .flex-column;
+  @extend .overflow-x-hidden;
+  @extend .shadow-lg;
+  width: 0;
+  z-index: 9;
+  background-color: #5f9e9c;
+  transition: 0.5s;
+  font-family: "Amatic SC", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+:host([is-menu-expanded]) {
+  width: 180px;
+}
+
+.nav-item {
+  & a,
+  button {
+    @extend .fs-3;
+    @extend .text-nowrap;
+    --bs-nav-link-color: #f1f1f1;
+    --bs-nav-link-hover-color: #f1f1f1;
+
+    &:hover {
+      background-color: #378280;
+    }
+  }
+}
+
+footer {
+  & a {
+    fill: white;
+    width: 24px;
+    height: 24px;
+
+    &:hover {
+      fill: #a97038;
+    }
+  }
+}
