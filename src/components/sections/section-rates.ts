@@ -32,10 +32,7 @@ export class SectionRates extends LitElement {
                     class="d-flex align-self-stretch mt-1"
                     style="width: 15px; height: 15px; min-width: 15px; min-heigh: 15px;"
                     >${logoIcon}</span
-                  ><span
-                    >170€, viernes, sábados, domingos y festivos (no
-                    especiales).</span
-                  >
+                  ><span>170€, viernes, sábados, domingos y festivos.</span>
                 </li>
               </ul>
             </div>
@@ -58,8 +55,9 @@ export class SectionRates extends LitElement {
                     style="width: 15px; height: 15px; min-width: 15px; min-heigh: 15px;"
                     >${logoIcon}</span
                   ><span
-                    >230€, 1 enero, 6 enero, 31 de octubre, 24 diciembre, 25
-                    diciembre, 31 diciembre, bautizos y comuniones.</span
+                    >230€, 1 de enero, 5 de enero, 6 de enero, 31 de octubre, 24
+                    de diciembre, 25 de diciembre, 31 de diciembre, bautizos y
+                    comuniones.</span
                   >
                 </li>
               </ul>

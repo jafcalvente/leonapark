@@ -24,6 +24,10 @@
 }
 
 .nav-item {
+  &.active {
+    background-color: #378280;
+  }
+
   & a,
   button {
     @extend .fs-3;

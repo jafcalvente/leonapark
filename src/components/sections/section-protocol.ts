@@ -50,7 +50,7 @@ export class SectionProtocol extends LitElement {
                       Abona en concepto de reserva 50€ en efectivo, o por
                       transferencia indicando como concepto &lt;&lt;<i
                         >NOMBRE COMPLETO + DIA DE RESERVA</i
-                      >&gt;&gt; a la siguiente cuenta:
+                      >&gt;&gt; al siguiente número de cuenta:
                     </div>
                     <div class="fs-5 text-center">
                       ES02 0182 4290 9502 0160 8213

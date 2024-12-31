@@ -45,6 +45,11 @@ const facilities: Facility[] = [
       "No podía faltar en él la cama elástica y las bolas. Con capacidad para 25 niños y menores de 12 años.",
   },
   {
+    title: "MESA DE AIR HOCKEY",
+    description:
+      "Disfruta de emocionantes partidos con los que amenizar tus celebraciones.",
+  },
+  {
     title: "TELEVISIÓN",
     description:
       "Para reproducir tu música favorita desde Youtube o lo que más te interese.",

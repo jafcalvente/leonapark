@@ -1,5 +1,6 @@
 import { LitElement, html, unsafeCSS } from "lit";
 import { customElement, property } from "lit/decorators.js";
+import { classMap } from "lit/directives/class-map.js";
 import { instagramIcon } from "../assets/icons/instagram";
 import { mapsIcon } from "../assets/icons/maps";
 import { whatsappIcon } from "../assets/icons/whatsapp";
@@ -35,7 +36,11 @@ export class LeonaParkSideMenu extends LitElement {
   render() {
     return html`
       <ul class="nav flex-column mt-5">
-        <li class="nav-item">
+        <li
+          class="nav-item ${classMap({
+            active: this.section === LeonaParkSection.HOME,
+          })}"
+        >
           <button
             type="button"
             class="nav-link w-100 text-start"
@@ -44,7 +49,11 @@ export class LeonaParkSideMenu extends LitElement {
             Inicio
           </button>
         </li>
-        <li class="nav-item">
+        <li
+          class="nav-item ${classMap({
+            active: this.section === LeonaParkSection.FACILITIES,
+          })}"
+        >
           <button
             type="button"
             class="nav-link w-100 text-start"
@@ -53,7 +62,11 @@ export class LeonaParkSideMenu extends LitElement {
             Nuestra sala
           </button>
         </li>
-        <li class="nav-item">
+        <li
+          class="nav-item ${classMap({
+            active: this.section === LeonaParkSection.PROTOCOL,
+          })}"
+        >
           <button
             type="button"
             class="nav-link w-100 text-start"
@@ -62,7 +75,11 @@ export class LeonaParkSideMenu extends LitElement {
             Cómo funciona
           </button>
         </li>
-        <li class="nav-item">
+        <li
+          class="nav-item ${classMap({
+            active: this.section === LeonaParkSection.RATES,
+          })}"
+        >
           <button
             type="button"
             class="nav-link w-100 text-start"
@@ -71,7 +88,11 @@ export class LeonaParkSideMenu extends LitElement {
             Tarifas
           </button>
         </li>
-        <li class="nav-item">
+        <li
+          class="nav-item ${classMap({
+            active: this.section === LeonaParkSection.GALLERY,
+          })}"
+        >
           <button
             type="button"
             class="nav-link w-100 text-start"
@@ -80,7 +101,11 @@ export class LeonaParkSideMenu extends LitElement {
             Galería
           </button>
         </li>
-        <li class="nav-item">
+        <li
+          class="nav-item ${classMap({
+            active: this.section === LeonaParkSection.CONTACT,
+          })}"
+        >
           <button
             type="button"
             class="nav-link w-100 text-start"
