@@ -48,9 +48,9 @@ export class SectionProtocol extends LitElement {
                   >
                   <div>
                     <div class="mb-2">
-                      Abona en concepto de reserva 50€ en efectivo, o por
-                      transferencia indicando como concepto &lt;&lt;<i
-                        >NOMBRE COMPLETO + DIA DE RESERVA</i
+                      Abona 50€ en concepto de reserva en efectivo o por
+                      transferencia, indicando como concepto &lt;&lt;<i
+                        >NOMBRE COMPLETO + DÍA DE RESERVA</i
                       >&gt;&gt; al siguiente número de cuenta:
                     </div>
                     <div class="fs-5 text-center">

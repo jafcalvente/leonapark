@@ -23,7 +23,7 @@ const facilities: Facility[] = [
   {
     title: "MOBILIARIO",
     description:
-      "Dispones de 5 mesas de 180cm y una de 122cm de largo, así como de 45 sillas apilables.",
+      "Dispones de 6 mesas de 180cm, así como de 45 sillas apilables.",
   },
   {
     title: "CLIMATIZACIÓN",
@@ -53,7 +53,7 @@ const facilities: Facility[] = [
   {
     title: "TELEVISIÓN",
     description:
-      "Para reproducir tu música favorita desde Youtube o lo que más te interese.",
+      "Para reproducir tu música favorita desde Youtube o ver lo que más te interese.",
   },
   {
     title: "RED WIFI GRATUITA",
