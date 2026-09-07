@@ -61,6 +61,28 @@ export class SectionRates extends LitElement {
               </ul>
             </div>
           </div>
+
+          <div class="card shadow text-shadow border-2 m-3">
+            <div
+              class="card-header px-4 d-flex align-items-baseline gap-1 flex-wrap"
+            >
+              <span class="card-title fs-5 mb-0"> Fianza </span>
+            </div>
+            <div class="card-body">
+              <ul class="card-text ps-0 m-md-2">
+                <li class="d-flex gap-2">
+                  <span
+                    class="d-flex align-self-stretch mt-1 list-icon"
+                    >${logoIcon}</span
+                  ><span
+                    >El día del evento se entregarán 50€ de fianza en efectivo que,
+                    en caso de no producirse daños o desperfectos, se devolverán al
+                    finalizar el alquiler.</span
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     `;
