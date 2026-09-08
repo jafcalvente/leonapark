@@ -3,14 +3,19 @@
 :host {
   @extend .position-sticky;
   @extend .top-0;
-  @extend .py-3;
+  @extend .py-2;
   @extend .d-flex;
+  @extend .align-items-center;
   @extend .justify-content-center;
   @extend .bg-white;
   z-index: 8;
   opacity: 0.9;
 
   img {
-    max-width: 200px;
+    max-width: 150px;
+
+    @media (min-width: 768px) {
+      max-width: 500px;
+    }
   }
 }

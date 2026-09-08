@@ -1,19 +1,32 @@
-import { LitElement, html, unsafeCSS } from "lit";
+import { LitElement, html } from "lit";
 import { customElement } from "lit/decorators.js";
 import { instagramIcon } from "../../assets/icons/instagram";
 import { whatsappIcon } from "../../assets/icons/whatsapp";
-import { bootstrapStyles } from "../../styles/shared-styles";
-import styles from "./section-contact.scss?inline";
+import "./section-contact.scss";
 
 @customElement("section-contact")
 export class SectionContact extends LitElement {
-  public static styles = [bootstrapStyles, unsafeCSS(styles)];
+  protected createRenderRoot() {
+    return this;
+  }
 
   render() {
     return html`
       <div class="row">
         <div class="col-12">
           <div class="m-3">
+            <h1
+              class="text-center amatic-sc-regular fw-bold eucalyptus-color--darker fs-2"
+            >
+              Encuentra tu lugar para celebrar cumpleaños y mucho más en
+              Málaga
+            </h1>
+            <p class="mb-3">
+              Si quieres celebrar una ocasión especial, Leona Park es tu
+              lugar para celebrar cumpleaños, eventos privados y disfrutar
+              de un acogedor salón para celebraciones en Alhaurín de la
+              Torre.
+            </p>
             <div class="mb-3 eucalyptus-color--darker">
               Encuéntranos en calle Salvador de Madariaga, edificio Edipsa
               Dalias, local 10, Alhaurín de la Torre.
@@ -27,6 +40,13 @@ export class SectionContact extends LitElement {
                 referrerpolicy="no-referrer-when-downgrade"
               ></iframe>
             </div>
+            <a
+              class="d-flex text-center justify-content-center mt-3 amatic-sc-regular golden-amber-color fs-2 fw-bold text-decoration-none"
+              href="https://wa.me/34644365646"
+              target="_blank"
+              >Contacta hoy y asegura tu salón para celebraciones en
+              Málaga</a
+            >
           </div>
         </div>
         <div class="col-12">

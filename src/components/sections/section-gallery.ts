@@ -1,5 +1,5 @@
 import { Carousel } from "bootstrap";
-import { LitElement, html, unsafeCSS } from "lit";
+import { LitElement, html } from "lit";
 import { customElement, query } from "lit/decorators.js";
 import { classMap } from "lit/directives/class-map.js";
 import carouselImage01 from "../../assets/gallery/leona_park_01.jpg";
@@ -19,8 +19,7 @@ import carouselImage14 from "../../assets/gallery/leona_park_14.jpg";
 import carouselImage15 from "../../assets/gallery/leona_park_15.jpg";
 import carouselImage16 from "../../assets/gallery/leona_park_16.jpg";
 import carouselImage17 from "../../assets/gallery/leona_park_17.jpg";
-import { bootstrapStyles } from "../../styles/shared-styles";
-import styles from "./section-gallery.scss?inline";
+import "./section-gallery.scss";
 
 const CAROUSEL_IMAGES = [
   carouselImage01,
@@ -44,7 +43,9 @@ const CAROUSEL_IMAGES = [
 
 @customElement("section-gallery")
 export class SectionGallery extends LitElement {
-  public static styles = [bootstrapStyles, unsafeCSS(styles)];
+  protected createRenderRoot() {
+    return this;
+  }
 
   @query("#leonaParkCarousel")
   private leonaParkCarousel!: HTMLDivElement;

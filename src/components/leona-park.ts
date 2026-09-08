@@ -1,15 +1,16 @@
-import {LitElement, html, nothing, unsafeCSS} from "lit";
+import {LitElement, html} from "lit";
 import {customElement, state} from "lit/decorators.js";
 import {choose} from "lit/directives/choose.js";
 import {classMap} from "lit/directives/class-map.js";
 import {menuIcon} from "../assets/icons/menu";
 import leonaParkNoTextLogo from "../assets/leona-park-no-text-logo.svg";
 import "../styles.scss";
-import {bootstrapStyles} from "../styles/shared-styles";
+import "./leona-park-footer";
 import "./leona-park-header";
 import "./leona-park-side-menu";
 import {LeonaParkSection} from "./leona-park-side-menu";
-import styles from "./leona-park.scss?inline";
+import "./leona-park.scss";
+import {applySeoMeta} from "../seo-meta";
 import "./sections/section-contact";
 import "./sections/section-facilities";
 import "./sections/section-gallery";
@@ -28,7 +29,9 @@ const LeonaParkSections = [
 
 @customElement("leona-park")
 export class LeonaPark extends LitElement {
-  public static styles = [bootstrapStyles, unsafeCSS(styles)];
+  protected createRenderRoot() {
+    return this;
+  }
 
   @state()
   private section?: LeonaParkSection;
@@ -39,6 +42,7 @@ export class LeonaPark extends LitElement {
   constructor() {
     super();
     this.section = this.getSectionFromUrl();
+    applySeoMeta(this.section);
   }
 
   connectedCallback() {
@@ -68,20 +72,21 @@ export class LeonaPark extends LitElement {
     this.isMenuExpanded = false;
     window.location.hash = `#${this.section}`;
     window.scrollTo({ top: 0 });
+    applySeoMeta(this.section);
   }
 
   private onPopstate = () => {
     this.section = this.getSectionFromUrl();
+    applySeoMeta(this.section);
   };
 
   render() {
     return html`<div class="container">
       <!-- Header -->
-      ${this.section === LeonaParkSection.HOME
-        ? nothing
-        : html`<leona-park-header
-            @click=${() => (this.isMenuExpanded = false)}
-          ></leona-park-header>`}
+      <leona-park-header
+        @click=${() => (this.isMenuExpanded = false)}
+        @request-change-section=${this.onRequestChangeSection}
+      ></leona-park-header>
 
       <!-- Show menu button -->
       ${this.renderShowMenuButton()}
@@ -99,7 +104,12 @@ export class LeonaPark extends LitElement {
         ${choose(
           this.section,
           [
-            [LeonaParkSection.HOME, () => html`<section-home></section-home>`],
+            [
+              LeonaParkSection.HOME,
+              () => html`<section-home
+                @request-change-section=${this.onRequestChangeSection}
+              ></section-home>`,
+            ],
             [
               LeonaParkSection.FACILITIES,
               () => html`<section-facilities></section-facilities>`,
@@ -125,6 +135,12 @@ export class LeonaPark extends LitElement {
           ],
           () => html`<section-home></section-home>`
         )}
+
+        <!-- Footer navigation -->
+        <leona-park-footer
+          .section=${this.section}
+          @request-change-section=${this.onRequestChangeSection}
+        ></leona-park-footer>
       </main>
     </div> `;
   }

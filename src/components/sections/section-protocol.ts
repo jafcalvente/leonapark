@@ -1,13 +1,14 @@
-import { LitElement, html, unsafeCSS } from "lit";
+import { LitElement, html } from "lit";
 import { customElement } from "lit/decorators.js";
 import { logoIcon } from "../../assets/icons/logo";
-import { bootstrapStyles } from "../../styles/shared-styles";
 import { LeonaParkSection } from "../leona-park-side-menu";
-import styles from "./section-protocol.scss?inline";
+import "./section-protocol.scss";
 
 @customElement("section-protocol")
 export class SectionProtocol extends LitElement {
-  public static styles = [bootstrapStyles, unsafeCSS(styles)];
+  protected createRenderRoot() {
+    return this;
+  }
 
   private changeSection(section: LeonaParkSection) {
     this.dispatchEvent(
@@ -23,7 +24,9 @@ export class SectionProtocol extends LitElement {
         <div class="col-12">
           <div class="card shadow text-shadow border-2 m-3">
             <div class="card-header px-4">
-              <span class="card-title fs-5"> ¿Cómo funciona? </span>
+              <h1 class="card-title fs-5 mb-0">
+                ¿Cómo funciona nuestro servicio de alquiler para eventos?
+              </h1>
             </div>
             <div class="card-body">
               <ul class="card-text ps-0 m-md-2">
@@ -35,9 +38,10 @@ export class SectionProtocol extends LitElement {
                   ><span
                     >Ponte en contacto con nosotros para consultar si el día que
                     te interesa está disponible. Te enviaremos además toda la
-                    información sobre nuestro funcionamiento. Debes ser mayor de
-                    25 años y tener en cuenta que las fiestas de adolescentes no
-                    están permitidas.</span
+                    información sobre el alquiler para eventos en nuestro
+                    salón para fiestas privadas. Debes ser mayor de 25 años y
+                    tener en cuenta que las fiestas de adolescentes no están
+                    permitidas.</span
                   >
                 </li>
                 <li class="d-flex gap-2 mb-3">
@@ -87,8 +91,17 @@ export class SectionProtocol extends LitElement {
                     class="d-flex align-self-stretch mt-1"
                     style="width: 15px; height: 15px; min-width: 15px; min-heigh: 15px;"
                     >${logoIcon}</span
-                  ><span
-                    >¿Quieres que te montemos tu mesa dulce? ¡Pregúntanos!</span
+                  ><a
+                    role="button"
+                    href="#"
+                    class="p-0 link text-shadow"
+                    @click=${(e: MouseEvent) => {
+                      e.preventDefault();
+                      e.stopPropagation();
+                      this.changeSection(LeonaParkSection.CONTACT);
+                    }}
+                    >Haz tu reserva y disfruta nuestro salón para eventos
+                    privado</a
                   >
                 </li>
                 <li class="d-flex gap-2">

@@ -1,17 +1,30 @@
-import { LitElement, html, unsafeCSS } from "lit";
+import { LitElement, html } from "lit";
 import { customElement } from "lit/decorators.js";
 import { logoIcon } from "../../assets/icons/logo";
-import { bootstrapStyles } from "../../styles/shared-styles";
-import styles from "./section-rates.scss?inline";
+import "./section-rates.scss";
 
 @customElement("section-rates")
 export class SectionRates extends LitElement {
-  public static styles = [bootstrapStyles, unsafeCSS(styles)];
+  protected createRenderRoot() {
+    return this;
+  }
 
   render() {
     return html`
       <div class="row">
         <div class="col-12 d-flex flex-column">
+          <div class="m-3 d-flex flex-column gap-3">
+            <h1
+              class="text-center amatic-sc-regular fw-bold eucalyptus-color--darker fs-2 mb-0"
+            >
+              Conoce nuestras tarifas de alquiler de espacios para eventos
+            </h1>
+            <p class="mb-0">
+              Prepárate para celebrar en grande con nuestras tarifas de
+              alquiler de espacios para eventos en un encantador salón de
+              celebraciones.
+            </p>
+          </div>
           <div class="card shadow text-shadow border-2 m-3">
             <div
               class="card-header px-4 d-flex align-items-baseline gap-1 flex-wrap"

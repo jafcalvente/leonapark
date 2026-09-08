@@ -1,7 +1,5 @@
-import {LitElement, TemplateResult, html, unsafeCSS} from "lit";
+import {LitElement, TemplateResult, html} from "lit";
 import {customElement} from "lit/decorators.js";
-import {bootstrapStyles} from "../../styles/shared-styles";
-import styles from "./section-facilities.scss?inline";
 
 type Facility = { title: string; description: string | TemplateResult };
 
@@ -72,12 +70,29 @@ const facilities: Facility[] = [
 
 @customElement("section-facilities")
 export class SectionFacilities extends LitElement {
-  public static styles = [bootstrapStyles, unsafeCSS(styles)];
+  protected createRenderRoot() {
+    return this;
+  }
 
   render() {
     return html`
       <div class="row">
         <div class="col-12">
+          <div class="m-3 d-flex flex-column gap-3">
+            <h1
+              class="text-center amatic-sc-regular fw-bold eucalyptus-color--darker fs-2 mb-0"
+            >
+              Un local para fiestas infantiles y eventos únicos llenos de
+              magia
+            </h1>
+            <p class="mb-0">
+              Conoce un espacio versátil con parque de bolas, centro de
+              juegos y zonas amplias pensadas para celebraciones
+              inolvidables. Disfruta de cumpleaños, reuniones familiares u
+              otros eventos privados en un entorno único como nuestro local
+              para fiestas infantiles y mucho más.
+            </p>
+          </div>
           <ul class="m-3 ps-0" style="list-style-type: none;">
             ${facilities.map((facility) => this.renderListItem(facility))}
           </ul>

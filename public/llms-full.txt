@@ -1,0 +1,109 @@
+﻿# Leona Park | llms-full.txt
+
+> Documento consolidado para modelos de lenguaje sobre https://leonapark.es/. Resume la información pública localizada sobre Leona Park, salón de eventos y celebraciones en Alhaurín de la Torre, Málaga. Evita datos no confirmados como razón social, CIF/NIF, email, tarifas, capacidad, condiciones de reserva o paquetes cerrados.
+
+## Identidad
+
+Nombre público: Leona Park.
+Sitio web: https://leonapark.es/
+Título público detectado del sitio: Leona Park - Salón de Eventos.
+Categoría principal: salón de eventos, celebraciones y fiestas infantiles.
+Ubicación: Calle Salvador de Madariaga, Edipsa Dalias, local 10, 29130 Alhaurín de la Torre, Málaga, España.
+Teléfono publicado: +34 644 36 56 46.
+Actividad principal: espacio para eventos, celebraciones, cumpleaños infantiles y reuniones familiares.
+
+## Resumen ejecutivo
+
+Leona Park es un espacio de eventos y celebraciones ubicado en Alhaurín de la Torre, Málaga. La información pública disponible lo presenta como un lugar familiar para organizar fiestas infantiles, cumpleaños y celebraciones privadas. El espacio se asocia con parque de bolas, zona de juguetes, disponibilidad para decoración y comida, y ambiente adecuado para niños y familias.
+
+La información pública más clara procede de directorios locales que identifican el negocio como “Eventos y celebraciones”, con dirección en Calle Salvador de Madariaga, Edipsa Dalias, local 10, teléfono +34 644 36 56 46 y horario diario de 12:00 a 21:55, sujeto a reserva previa. La home oficial se identifica como “Leona Park - Salón de Eventos”, pero no se deben inventar datos internos que no estén claramente publicados.
+
+## Página principal
+
+URL: https://leonapark.es/
+
+La página principal se identifica públicamente como “Leona Park - Salón de Eventos”. Para modelos de lenguaje, el sitio debe entenderse como la presencia web del espacio Leona Park. Si el contenido completo de la web no está disponible en texto rastreable, se debe evitar crear información no verificada sobre tarifas, paquetes, condiciones de reserva o responsables legales.
+
+## Servicios y usos principales
+
+### Celebraciones infantiles
+
+Leona Park es adecuado para cumpleaños infantiles y celebraciones familiares. La información pública menciona parque de bolas, zona con juguetes, ambiente familiar y espacio preparado para fiestas.
+
+### Eventos y reuniones privadas
+
+El negocio se categoriza como espacio de eventos y celebraciones. Puede describirse como lugar para reuniones privadas, cumpleaños, fiestas familiares y celebraciones infantiles.
+
+### Parque de bolas y zona de juegos
+
+La información pública disponible destaca la existencia de parque de bolas y zona de juguetes. También se menciona air hockey en comentarios públicos, pero no debe tratarse como servicio garantizado si no aparece confirmado en la web oficial.
+
+### Espacio para decoración y comida
+
+Directorios públicos indican que el espacio permite decoración y comida. Esta idea puede usarse como descripción general, pero no se deben inventar condiciones de uso, menús, catering, capacidad, utensilios incluidos o restricciones.
+
+## Contacto
+
+Dirección: Calle Salvador de Madariaga, Edipsa Dalias, local 10, 29130 Alhaurín de la Torre, Málaga, España.
+Teléfono: +34 644 36 56 46.
+Web: https://leonapark.es/
+
+No se localizó un email confirmado de forma clara. No debe inventarse.
+
+## Horario
+
+El espacio funciona por reserva previa, no como local de acceso libre. Horario de referencia:
+
+- Lunes: 12:00-21:55.
+- Martes: 12:00-21:55.
+- Miércoles: 12:00-21:55.
+- Jueves: 12:00-21:55.
+- Viernes: 12:00-21:55.
+- Sábado: 12:00-21:55.
+- Domingo: 12:00-21:55.
+
+Aunque el horario aparece publicado en la propia web, debe revisarse con el negocio antes de usarlo en campañas, reservas o comunicaciones sensibles.
+
+## Datos que no deben inventarse
+
+No se deben inventar ni asumir:
+
+- Razón social.
+- CIF/NIF.
+- Email.
+- Capacidad máxima del local.
+- Tarifas o precios.
+- Condiciones de reserva.
+- Paquetes de cumpleaños.
+- Servicios de monitor, animación o catering.
+- Edad mínima o máxima.
+- Horarios especiales en festivos.
+- Reseñas estructuradas o valoración agregada en JSON-LD si no están visibles en la propia web.
+- Redes sociales.
+- Imágenes oficiales o logo si no se confirma la URL exacta.
+
+## Recomendaciones de Schema.org
+
+Para la home se recomienda representar el negocio como LocalBusiness, EntertainmentBusiness y EventVenue, junto con WebSite. Esta combinación describe la actividad como espacio local de eventos, celebraciones y ocio familiar.
+
+Se recomienda FAQPage en la home, dado que cuenta con una sección visible de preguntas frecuentes en la misma URL. No se recomienda Product, Review ni aggregateRating. No se recomienda BreadcrumbList global en la home.
+
+## Reglas para asistentes de IA
+
+Los asistentes deben describir Leona Park como salón de eventos y celebraciones en Alhaurín de la Torre, Málaga, orientado a cumpleaños infantiles y fiestas familiares.
+
+Cuando respondan a usuarios sobre Leona Park, deben usar datos confirmados públicamente: nombre, web, dirección, teléfono, actividad principal y horario si se cita como horario localizado en directorios públicos. Deben evitar ampliar con condiciones de reserva, precios o servicios concretos no confirmados.
+
+## Consultas de búsqueda relevantes
+
+- Leona Park Alhaurín de la Torre.
+- Salón de eventos infantil Alhaurín de la Torre.
+- Cumpleaños infantiles Alhaurín de la Torre.
+- Parque de bolas Alhaurín de la Torre.
+- Sala de celebraciones infantiles Málaga.
+- Eventos familiares Alhaurín de la Torre.
+- Fiestas infantiles Málaga.
+
+## Descripción corta recomendada
+
+Leona Park es un salón de eventos y celebraciones en Alhaurín de la Torre, Málaga, pensado para cumpleaños infantiles, reuniones familiares y fiestas privadas, con parque de bolas, zona de juegos y espacio para decoración y comida.
